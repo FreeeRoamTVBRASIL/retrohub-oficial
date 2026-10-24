@@ -127,6 +127,16 @@ body:before{opacity:.3;background:repeating-linear-gradient(0deg,transparent 0 2
 @media(max-width:900px){.story-copy{width:100%;padding-right:0}.story-text{top:15%!important;max-width:82%}.story-text h1{font-size:clamp(42px,9vw,64px)!important;max-width:600px!important}.story-text h1 em{font-size:.72em!important;white-space:normal}.story-text h2{font-size:clamp(40px,8vw,58px)!important;max-width:520px}.story-text p{max-width:500px}.visual-wrap{width:65%;right:-25%}}
 @media(max-width:640px){.story-text{top:12%!important;max-width:100%}.story-text h1{font-size:40px!important;line-height:.96!important}.story-text h1 em{font-size:.72em!important}.story-text h2{font-size:39px!important;line-height:.96!important}.story-text p{font-size:14px!important;line-height:1.42!important}.support-kofi{width:100%;padding:10px;box-shadow:8px 8px 0 #020609;transform:none}.support-kofi-label{display:block}.support-kofi-label span,.support-kofi-label b{display:block;margin:4px}}
 
+
+/* Story stacking correction after live viewport audit */
+.story-copy{padding-top:0!important}
+.story-label{position:absolute!important;left:0;top:clamp(82px,11vh,125px)!important;z-index:8}
+.hero-edition{position:absolute;left:0;top:clamp(112px,15vh,165px);margin:0!important;z-index:8}
+.story-text{top:clamp(190px,25vh,270px)!important}
+@media(min-width:901px) and (max-height:900px){.story-label{top:58px!important}.story-text{top:104px!important}}
+@media(min-width:901px) and (max-height:720px){.story-label{top:42px!important}.story-text{top:82px!important}}
+@media(max-width:900px){.story-label{top:7%!important}.hero-edition{display:none}.story-text{top:13%!important}}
+
 </style>
   
 </head>
