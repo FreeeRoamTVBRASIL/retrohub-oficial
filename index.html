@@ -59,6 +59,40 @@ body:before{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;op
 @media(max-width:1080px){.nav-desktop{gap:18px}.nav-desktop>a{font-size:10px}.support-layout{grid-template-columns:1fr;gap:45px}.support-emblem{order:-1}.support-disc{width:280px}.support-copy{text-align:center}.support-copy>p,.support-status{margin-left:auto;margin-right:auto}.support-actions{justify-content:center}}
 @media(max-width:760px){.support-hero{padding-top:28px}.support-layout{padding:38px 0 50px}.support-copy h1{font-size:47px}.support-copy>p{font-size:16px}.support-uses{grid-template-columns:1fr}.support-emblem{display:none}.scroll-story:after{width:calc(100% - 38px);left:19px;transform:none}.top-right{display:none}}
 
+
+
+/* Collection OS 04 — pronounced visual overhaul */
+:root{--bg:#03080c;--bg2:#071018;--surface:#0c1821;--surface2:#111f29;--edge:#30434a;--accent:#65f2d2;--accent2:#2dbb9f;--amber:#ffb930;--danger:#ff5f56;--container:1320px;--header-h:92px}
+body{background:#03080c;color:#f2f6f3;font-family:"Arial Narrow","Bahnschrift Condensed","Segoe UI",Arial,sans-serif}
+body:before{opacity:.3;background:repeating-linear-gradient(0deg,transparent 0 2px,#ffffff08 2px 3px),radial-gradient(circle at 20% 10%,#68f2d20d,transparent 26%);mix-blend-mode:screen}
+.site-topline{height:28px;border-top:0;background:#05090c;color:#83949a;box-shadow:inset 0 -1px #26363c}.site-topline:before{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--amber) 0 11%,#ff5c3d 11% 18%,var(--accent) 18% 100%)}
+.site-header{background:#071017f2;backdrop-filter:blur(18px);box-shadow:0 12px 0 #020507,0 13px #263a41}.header-inner{gap:24px}.wordmark img{width:58px;height:58px}.wordmark>span{font-size:25px;letter-spacing:-.08em}.wordmark small{color:#88aaa8}
+.nav-desktop{align-self:stretch;border-left:1px solid #25353c;margin-left:28px;gap:0}.nav-desktop>a{padding:0 18px;border-right:1px solid #25353c;font-size:10px;letter-spacing:.13em}.nav-desktop>a:hover,.nav-desktop>a.nav-active{background:linear-gradient(#12232b,#0c171e);color:#fff}.nav-desktop>a.nav-active:after{height:4px;background:linear-gradient(90deg,var(--amber),var(--accent));box-shadow:0 0 26px var(--accent)}
+.social-circle{border-radius:5px;background:#0c1a22;border-color:#34474f}.support-social{background:#291c09;border-color:#7d5717}.header-catalog{clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);border-radius:0}
+.collection-ribbon{height:34px;overflow:hidden;border-bottom:1px solid #2e4248;background:linear-gradient(90deg,#17242a,#0b151b 52%,#17242a);color:#b7c5c7;position:relative;z-index:5}.ribbon-track{width:min(calc(100% - 70px),1500px);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;white-space:nowrap;font-size:9px;font-weight:800;letter-spacing:.18em}.ribbon-track b{color:var(--amber)}.ribbon-track i{width:5px;height:5px;transform:rotate(45deg);background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.scroll-story{margin-top:0;background:linear-gradient(90deg,#03080c 0 49.9%,#101a20 50% 50.1%,#07141a 50.2%),radial-gradient(circle at 75% 40%,#1b4844,transparent 35%)}
+.scroll-story:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(110deg,transparent 0 48%,#4ee4c508 48% 49%,transparent 49%),repeating-linear-gradient(90deg,transparent 0 109px,#8ce1d309 110px);pointer-events:none}
+.story-sticky{top:calc(var(--header-h) + 34px);height:calc(100vh - var(--header-h) - 34px)}
+.story-copy{width:54%;padding-right:5vw}.story-label{font-size:10px;letter-spacing:.22em}.story-text h1{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(68px,7vw,118px);line-height:.8;letter-spacing:-.045em;text-transform:uppercase;margin:24px 0 28px}.story-text h1 em{color:transparent;font-style:normal;-webkit-text-stroke:2px var(--accent);text-shadow:6px 6px 0 #153b38,0 0 38px #56e9c82f}.story-text-0>p{max-width:650px;border-left:4px solid var(--amber);padding-left:20px;font-size:18px;line-height:1.65;color:#c0ccce}
+.hero-edition{display:inline-grid;grid-template-columns:44px auto;align-items:center;margin-top:26px;border:1px solid #496067;background:#e8eeec;color:#061016;box-shadow:7px 7px 0 #102d2c;transform:rotate(-1deg)}.hero-edition span{grid-row:1/3;display:grid;place-items:center;height:48px;background:#050a0d;color:white;font:900 20px/1 Arial}.hero-edition b{padding:5px 12px 0;font-size:13px;letter-spacing:.12em}.hero-edition small{padding:0 12px 5px;font-size:7px;letter-spacing:.2em;color:#4a585d}
+.story-actions{margin-top:32px}.button{border-radius:2px;text-transform:uppercase;font-weight:900;letter-spacing:.06em}.button-primary{color:#06100f;background:linear-gradient(135deg,#98ffe8,#55d8bd);box-shadow:5px 5px 0 #17443e}.button-primary:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #17443e}.link-inline{font-size:10px;letter-spacing:.16em}
+.hero-specs{display:flex;margin-top:40px;border-top:1px solid #38494f;border-bottom:1px solid #38494f;max-width:650px}.hero-specs span{flex:1;padding:12px 14px;color:var(--amber);font-size:9px;line-height:1.5;border-right:1px solid #38494f}.hero-specs span:first-child{border-left:1px solid #38494f}.hero-specs b{color:#9eb0b5;font-size:8px;letter-spacing:.08em}
+.visual-wrap{width:52%;right:-1%;filter:drop-shadow(30px 30px 40px #000)}.object-halo{background:radial-gradient(circle,var(--accent) 0 2%,#58dfc92c 20%,transparent 67%)}
+.scroll-story:after{bottom:17px;color:#768b90;background:#05090cbf;border:1px solid #283a40;padding:10px 14px;width:min(calc(100% - 96px),var(--container))}
+.section-heading h2,.download-intro h2,.next-inner h2{font-family:Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.035em}.feature-section,.downloads{background-color:#050c11;background-image:linear-gradient(#152229 1px,transparent 1px),linear-gradient(90deg,#152229 1px,transparent 1px);background-size:42px 42px}
+.feature-card,.platform-card,.art-card{border-radius:2px;border-color:#34474f;background:linear-gradient(145deg,#101f28,#071017);box-shadow:9px 9px 0 #020609}.feature-card:hover,.platform-card:hover,.art-card:hover{transform:translate(-4px,-4px);box-shadow:14px 14px 0 #020609;border-color:var(--accent)}
+.feature-card .feature-number,.platform-card .platform-status{color:var(--amber)}
+.catalog-tease{background:linear-gradient(135deg,#071119 0 58%,#102820 58%);border-top:10px solid #0b161d;border-bottom:10px solid #0b161d}.catalog-tease:after{content:"ARTWORK ARCHIVE";position:absolute;right:-30px;top:80px;transform:rotate(90deg);color:#ffffff12;font:900 80px/1 Impact,sans-serif;letter-spacing:.08em}
+.download-intro .mini-overline,.mini-overline{color:var(--amber)}
+.next-section{background:linear-gradient(100deg,#ffb930 0 8px,#071119 8px 63%,#0c2b26 63%);border-top:1px solid #42545a}
+.footer{border-top:8px solid #111c22;background:#020609}.footer:before{content:"";display:block;height:2px;background:linear-gradient(90deg,var(--amber),#ff6648,var(--accent))}
+.catalog-hero{background:linear-gradient(112deg,#061017 0 55%,#12352d 55%);border-bottom:8px solid #0b151a}.catalog-hero h1,.support-copy h1{font-family:Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.035em}.search-panel{border-radius:2px;border-top:4px solid var(--amber)}
+.support-hero{background:linear-gradient(110deg,#061017 0 52%,#102d28 52%);border-top:1px solid var(--accent)}.support-disc{border-radius:50%;box-shadow:18px 18px 0 #06100f,0 0 0 1px #8de4d77a,0 0 90px #64dfc33d}.support-uses article{border-radius:2px;border-top:3px solid var(--amber);box-shadow:8px 8px 0 #020609}
+@media(max-width:1180px){.nav-desktop>a{padding:0 11px}.header-catalog{display:none}.story-text h1{font-size:clamp(60px,7vw,92px)}}
+@media(max-width:900px){.collection-ribbon{height:30px}.ribbon-track{width:max-content;animation:ribbonMove 24s linear infinite;justify-content:flex-start;padding-left:24px}.ribbon-track span{margin-right:30px}.story-sticky{top:var(--header-h);height:calc(100vh - var(--header-h))}.story-copy{width:100%;padding-right:0}.visual-wrap{opacity:.34;width:70%;right:-28%}.story-text h1{font-size:clamp(58px,13vw,92px)}.hero-specs{max-width:520px}.story-text-0>p{max-width:520px}.scroll-story:after{display:none}}
+@media(max-width:640px){.site-topline{display:none}.collection-ribbon{margin-top:0}.story-text h1{font-size:53px}.story-text h1 em{-webkit-text-stroke:1px var(--accent);text-shadow:3px 3px 0 #153b38}.hero-edition{margin-top:10px}.hero-specs{display:none}.story-actions{align-items:flex-start}.story-actions .button{width:100%}.visual-wrap{right:-42%;width:85%}.ribbon-track{font-size:8px}}
+@keyframes ribbonMove{to{transform:translateX(-45%)}}
+
 </style>
   
 </head>
@@ -94,6 +128,12 @@ body:before{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;op
     </nav>
   </header>
 
+  <div class="collection-ribbon" aria-label="Identidade RetroHub">
+    <div class="ribbon-track">
+      <span><b>RETROHUB</b> COLLECTION OS</span><i></i><span>PC DVD-ROM ARCHIVE</span><i></i><span>CAPAS • DISCOS • ENCARTES</span><i></i><span>WINDOWS + LINUX</span><i></i><span>PRESS START TO REMEMBER</span>
+    </div>
+  </div>
+
   <main id="landingPage">
     <section class="scroll-story" id="experiencia" aria-label="Apresentação interativa do RetroHub">
       <div class="story-sticky">
@@ -101,11 +141,11 @@ body:before{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;op
         <div class="story-light story-light-a" aria-hidden="true"></div><div class="story-light story-light-b" aria-hidden="true"></div>
         <div class="container story-inner">
           <div class="story-copy">
-            <div class="story-label"><span class="eyebrow-bar"></span><span class="story-index">01 / 04</span><span>A ESTANTE DIGITAL DE QUEM CRESCEU COM PC DVD</span></div>
+            <div class="story-label"><span class="eyebrow-bar"></span><span class="story-index">01 / 04</span><span>RETROHUB COLLECTION OS</span></div><div class="hero-edition"><span>PC</span><b>DVD-ROM</b><small>COLLECTOR EDITION</small></div>
             <div class="story-text story-text-0 active" data-story-text="0">
               <h1>Seus jogos de PC.<br><em>Na estante outra vez.</em></h1>
               <p>Caixa na mão, manual aberto, disco no leitor. O RETROHUB traz esse ritual de volta para a sua biblioteca digital.</p>
-              <div class="story-actions"><a class="button button-primary button-large" href="#recursos" data-route="features">Conheça o RETROHUB <span>↗</span></a><a class="link-inline" href="#catalogo" data-route="catalog">Explorar catálogo <span>↗</span></a></div>
+              <div class="story-actions"><a class="button button-primary button-large" href="#downloads" data-route="downloads">BAIXAR O RETROHUB <span>↓</span></a><a class="link-inline" href="#catalogo" data-route="catalog">ABRIR ARQUIVO DE CAPAS <span>↗</span></a></div><div class="hero-specs"><span>01<br><b>BIBLIOTECA 3D</b></span><span>02<br><b>ARTES REAIS</b></span><span>03<br><b>PRONTO PARA JOGAR</b></span></div>
             </div>
             <div class="story-text" data-story-text="1" aria-hidden="true">
               <div class="chapter">01 <span>/</span> DE FORA PARA DENTRO</div>
